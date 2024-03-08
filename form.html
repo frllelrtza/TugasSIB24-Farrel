@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <img src="assets/img/logo/arkatama-removebg-preview.png" alt="logo" height="60" />
+      <ul>
+        <li>
+          <a href="index.html">Beranda</a>
+        </li>
+        <li>
+          <a href="form.html">Form</a>
+        </li>
+        <li>
+          <a href="jsdasar.html">Materi JavaScript</a>
+        </li>
+      </ul>
+    </nav>
+
+    <form action="index.html" method="post">
+      <div class="form-control">
+        <label for="nama">Nama</label>
+        <input type="text" name="nama" id="nama" placeholder="Nama Lengkap" />
+      </div>
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email Aktif" />
+      </div>
+      <div class="form-control">
+        <label for="no_hp">No Hp</label>
+        <input type="tel" id="no_hp" name="no_hp" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="No. HP Aktif" />
+      </div>
+      <div class="form-control">
+          <label for="kelamin">Jenis Kelamin</label>
+          <div class="radio-group">
+              <input type="radio" name="kelamin" id="perempuan" value="Perempuan" />
+              <label for="perempuan">Perempuan</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" name="kelamin" id="laki_laki" value="Laki-Laki" />
+                <label for="laki_laki">Laki-Laki</label>
+            </div>
+        </div>
+      <div class="form-control">
+        <label for="prodi">Program Studi</label>
+        <select name="prodi" id="prodi">
+          <option value="">Pilih Prodi</option>
+          <option value="Ilmu_Komputer">Ilmu Komputer</option>
+          <option value="Teknik_informatika">Teknik Informatika</option>
+          <option value="Sistem_Informasi">Sistem Informasi</option>
+          <option value="Data_Science">Data Science</option>
+        </select>
+      </div>
+      <div class="form-control">
+        <label for="hobi">Hobi</label>
+        <div class="checkbox">
+          <input type="checkbox" name="membaca" id="membaca" />
+          <label for="membaca">Membaca</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="menulis" id="menulis" />
+          <label for="membaca">Menulis</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="menyanyi" id="menyanyi" />
+          <label for="membaca">menyanyi</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="olahraga" id="olahraga" />
+          <label for="membaca">Olahraga</label>
+        </div>
+      </div>
+      <div class="form-control">
+        <label for="alamat">Alamat</label>
+        <div class="textarea">
+          <textarea name="alamat" id="alamat" cols="40" rows="5" placeholder="Alamat Lengkap"></textarea>
+        </div>
+      </div>
+      <div class="form-control">
+        <label for="foto">Foto Diri</label>
+        <input type="file" name="foto" id="foto" accept=".png, .jpg, .jpeg" />
+      </div>
+      <input type="submit" name="submit" id="submit" value="Daftar" />
+    </form>
+
+    <script src="assets/js/form.js"></script>
+  </body>
+</html>

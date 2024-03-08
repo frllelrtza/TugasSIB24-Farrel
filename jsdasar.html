@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi JavaScript</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  
+</head>
+<body>
+    <nav id="navbar">
+        <img src="assets/img/logo/arkatama-removebg-preview.png" alt="logo" height="60" />
+        <ul>
+          <li>
+            <a href="index.html">Beranda</a>
+          </li>
+          <li>
+            <a href="form.html">Form</a>
+          </li>
+          <li>
+            <a href="jsdasar.html">Materi JavaScript</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <form id="basicForm">
+          
+          
+          <!-- Popup -->
+          <div class="popup">    
+              <button class="alert" type="button" onclick="showAlert()">Show Alert</button>
+              <button class="confirm" type="button" onclick="showConfirm()">Show Confirm</button>
+              <button class="prompt" type="button" onclick="showPrompt()">Show Prompt</button>
+          </div>
+
+      
+        <!-- JavaScript Data Types -->
+        <label for="dataTypeSelect">JavaScript Data Type:</label>
+        <select id="dataTypeSelect">
+          <option value="number">123.1</option>
+          <option value="bigint">9007199254740991</option>
+          <option value="string">"Ini Tipe Data String"</option>
+          <option value="boolean">True | False</option>
+        </select>
+        <button type="button" onclick="showDataType()">Show Data Type</button>
+    
+      
+        <!-- Type Conversion -->
+        <label for="convertInput">Value to Convert:</label>
+        <input type="text" id="convertInput" name="convertInput" placeholder="Masukan Tipe Data String">
+        <button type="button" onclick="convertType()">Convert</button>
+
+      
+        <!-- JavaScript Operators -->
+        <label for="operatorInput">Operator Input:</label>
+        <input type="text" id="operatorInput" name="operatorInput" placeholder="EX: 1 + 1">
+        <button type="button" onclick="useOperator()">Use Operator</button>
+
+      
+        
+        
+        
+        <!-- If-Else Statement -->
+        <label for="ageInput">Enter Age:</label>
+        <input type="number" id="ageInput" name="ageInput">
+        <button type="button" onclick="checkAge()">Check Age</button>
+        
+      <div class="loop-break">
+          <!-- Looping -->
+          <button class="loop"  type="button" onclick="loopExample()">Run Loop</button>
+          <p id="loopResult"></p>
+          <!-- Break Statement -->
+          <button class="break" type="button" onclick="breakLoop()">Break Loop</button>
+          <p id="loopResult"></p>
+      </div>
+        
+
+    <script src="assets/js/jsdasar.js"></script>
+</body>
+</html>
