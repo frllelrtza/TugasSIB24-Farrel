@@ -289,3 +289,35 @@ button:hover {
   font-size: 14px;
   color: #888;
 }
+
+.tambah{
+  background-color: #28a745;
+  color: #fff;
+}
+.tambah:hover{
+  background-color: #218838;
+  color: #fff;
+}
+
+.edit{
+  background-color: #007bff;
+  color: #fff;
+}
+.edit:hover{
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.delete{
+  background-color: #dc3545;
+  color: #fff;
+}
+.delete:hover{
+  background-color: #c82333;
+  color: #fff;
+}
+.container-tambah{
+display: flex;
+justify-content: center;
+align-items: center;
+}

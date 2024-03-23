@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product API</title>
+    <title>Marvel Movie Gallery</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-  
 </head>
 <body>
     <nav id="navbar">
@@ -28,16 +27,49 @@
           </li>
           <li><a href="productapi.html">Product</a></li>
         </ul>
-      </nav>
+    </nav>
 
-      <div class="container">
-        <h1 class="gallery-title">Marvel Movie Gallery</h1>
-        <div class="gallery-row" id="konten">
-      
-            </div>
-          </div>
-
-
+    <div class="container">
+      <h1 class="gallery-title">Marvel Movie Gallery</h1>
+      <div class="container-tambah">
+        <button class="tambah" onclick="showForm('addForm')">Tambah Film</button>
+      </div>
+    </div>
+  
+      <div class="form-container" style="display: none;" id="addForm">
+        <h2>Tambah Film Baru</h2>
+        <button onclick="closeForm('addForm')">Tutup</button>
+        <form id="addMovieForm">
+          <label for="title">Judul:</label>
+          <input type="text" id="title" name="title" required><br><br>
+          <label for="year">Tahun:</label>
+          <input type="number" id="year" name="year" min="2000" required><br><br>
+          <label for="director">Sutradara:</label>
+          <input type="text" id="director" name="director" required><br><br>
+          <label for="cast">Pemain:</label>
+          <input type="text" id="cast" name="cast" required><br><br>
+          <label for="image">URL Gambar:</label>
+          <input type="text" id="image" name="image" required><br><br>
+          <button type="submit">Tambahkan Film</button>
+        </form>
+      </div>
+  
+      <div class="form-container" style="display: none;" id="editForm">
+        <h2>Edit Film</h2>
+        <button onclick="closeForm('editForm')">Tutup</button>
+        <form id="editMovieForm">
+          <label for="editId">ID Film:</label>
+          <input type="text" id="editId" name="editId" required><br><br>
+          <label for="editTitle">Judul Baru:</label>
+          <input type="text" id="editTitle" name="editTitle" required><br><br>
+          <button type="submit">Simpan Perubahan</button>
+        </form>
+      </div>
+  
+      <div class="gallery-row" id="konten">
+        <!-- Tempat untuk menampilkan data film dari API -->
+      </div>
+    </div>
 
     <script src="assets/js/productapi.js"></script>
 </body>
