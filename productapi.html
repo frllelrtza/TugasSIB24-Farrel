@@ -31,15 +31,14 @@
 
     <div class="container">
       <h1 class="gallery-title">Marvel Movie Gallery</h1>
-      <div class="container-tambah">
+      <div class="center">
         <button class="tambah" onclick="showForm('addForm')">Tambah Film</button>
-      </div>
     </div>
   
       <div class="form-container" style="display: none;" id="addForm">
-        <h2>Tambah Film Baru</h2>
-        <button onclick="closeForm('addForm')">Tutup</button>
         <form id="addMovieForm">
+          <h2>Tambah Film Baru</h2>
+          <button onclick="closeForm('addForm')">Tutup</button>
           <label for="title">Judul:</label>
           <input type="text" id="title" name="title" required><br><br>
           <label for="year">Tahun:</label>

@@ -237,7 +237,7 @@ button:hover {
 .gallery-title {
   font-family: "Poppins", sans-serif;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #FFF;
   font-weight: bolder;
   font-size: 40px;
@@ -316,8 +316,19 @@ button:hover {
   background-color: #c82333;
   color: #fff;
 }
-.container-tambah{
-display: flex;
-justify-content: center;
-align-items: center;
+.center{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 15px;
 }
+
+.form-container h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #92bdeb;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
