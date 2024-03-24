@@ -404,12 +404,20 @@ button:hover {
   }
   nav {
     flex-direction: column;
-    padding: 10px; /* Adjust padding for mobile */
+    padding: 10px;
   }
   
   nav ul {
     flex-direction: column;
     align-items: center;
   }
+  nav img{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
 
