@@ -1,4 +1,4 @@
-const endpoint = "https://crudcrud.com/api/a367375a39534ea1aa2565d00b0171e3/marvel";
+const endpoint = "https://crudcrud.com/api/46d249ed733043e795c585ae5bb462aa/marvel";
     const konten = document.getElementById("konten");
 
     // Fungsi untuk menampilkan form berdasarkan nama ID
@@ -12,6 +12,7 @@ const endpoint = "https://crudcrud.com/api/a367375a39534ea1aa2565d00b0171e3/marv
         }
       });
     }
+
 
     // Fungsi untuk menutup form
     function closeForm(formId) {
