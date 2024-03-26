@@ -19,3 +19,14 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change slide every 5 seconds
 }
 
+function toggleDropdown() {
+  var dropdownMenu = document.getElementById("myDropdown");
+  dropdownMenu.classList.toggle("show-dropdown");
+}
+
+window.addEventListener('click', function(event) {
+  var dropdownMenu = document.getElementById("myDropdown");
+  if (event.target != dropdownMenu && !dropdownMenu.contains(event.target)) {
+    dropdownMenu.classList.remove('show-dropdown');
+  }
+});
