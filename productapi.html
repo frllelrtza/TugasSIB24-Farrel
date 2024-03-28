@@ -11,12 +11,10 @@
 </head>
 <body>
   <nav id="navbar">
-      
-    <img src="assets/img/logo/arkatama-removebg-preview.png" alt="logo" height="60" />
+    <a href="index.html">
+    <img src="assets/img/logo/arkatama-removebg-preview.png" alt="logo" height="60"></img>
+  </a>
     <ul>
-      <li>
-        <a href="index.html">Beranda</a>
-      </li>
       <li>
         <a href="form.html">Form</a>
       </li>
@@ -26,17 +24,24 @@
       <li>
         <a href="landingdom.html">Landing Dom</a>
       </li>
-      <li>
-        <a href="productapi.html">Product</a></li>
-      <li>
-        <a href="product-responsive.html">Product Responsive</a>
+      <li class="nav-item dropdown">
+        <a href="#" class="dropbtn">Product</a>
+        <div class="dropdown-content">
+          <a href="productapi.html">Product</a>
+          <a href="product-responsive.html">Product Responsive</a>
+          <a href="newproduct.php">New Product</a>
+        </div>
       </li>
-      <li>
-        <a href="login-responsive.html">Login Responsive</a>
+        <li class="nav-item dropdown">
+          <a href="#" class="dropbtn">Login</a>
+          <div class="dropdown-content">
+            <a href="login-responsive.html">Login Responsive</a>
+            <a href="login.php">Login Dashboard</a>
+            
+          </div>
       </li>
     </ul>
   </nav>
-
     <div class="container">
       <h1 class="gallery-title">Marvel Movie Gallery</h1>
       <div class="center">
