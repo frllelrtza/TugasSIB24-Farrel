@@ -1,4 +1,4 @@
-const endpoint = "https://crudcrud.com/api/5a1bb6e8f15f4f95a5ca8b5c6457d169/marvel";
+const endpoint = "https://crudcrud.com/api/1b947110291246bc836265a8ac9873db/marvel";
     const konten = document.getElementById("konten");
 
     // Fungsi untuk menampilkan form berdasarkan nama ID
